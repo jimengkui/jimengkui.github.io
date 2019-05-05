@@ -10,7 +10,7 @@
     
     
     
-    <title>archive_a | 冰华</title>
+    <title>hexo博客爬坑日记（一） | 冰华</title>
     <link href="”http://yoursite.com“" rel="”prefetch”">
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -93,7 +93,7 @@
                 
                 
                 
-                <li class="current">
+                <li class>
                     <a href="/archives">
                         <i class="fa fa-archive"></i>归档
                     </a>
@@ -158,19 +158,34 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    <article class="article well article-body" id="article-archive">
+                    
+<article class="article well article-body" id="article">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
         <a href="http://yoursite.com">冰华</a>
         >
-        <span>归档</span>
+        <span>hexo博客爬坑日记（一）</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/archives">归档</a>
+                <a href="/posts/3261cbbf/">hexo博客爬坑日记（一）</a>
             </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/hexo/">hexo</a>
+                
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2019-05-04
+            </span>
+            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -178,31 +193,51 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/archives">归档</a>
+                    <a href="/posts/3261cbbf/">hexo博客爬坑日记（一）</a>
                 </h4>
             </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2019-05-04
+            </p>
+            <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/hexo/">hexo</a>
+                
+                
+                
+            </p>
         </center>
     </div>
-    <div class="content-article" style="margin-top: 30px;">
-        
-        
-            <h1 style="font-size: 24px; margin-top: 40px;">2019年</h1>
-            
-        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
-            
-             
-             
-                        <a href="/posts/2772767/">hexo博客爬坑日记（二）</a>
-                        <br>
-            
-             
-                        <a href="/posts/3261cbbf/">hexo博客爬坑日记（一）</a>
-                        <br>
-            
-                    </div>
-        
+    <div class="content-article">
+        <p>想起以前的学习过程中，一旦遇到问题，就各种在网上搜索解决办法，也收藏了很多有用的博客，<br>可是因为之前缺乏资料整理的意识，找到解决办法后就只是新建一个文本文档把博客的链接和解决了什么问题写在上面…….,<br>或者更草率把解决办法的连接添加在浏览器的收藏夹了，很少去管。不出所料时间一长就……emmmmm。所以搭建一个属于自己的个人博客，<br>把自己爬过的坑和决绝办法记录下来。</p>
+<a id="more"></a>
+<p><strong>前言</strong></p>
+<p>想起以前的学习过程中，一旦遇到问题，就各种在网上搜索解决办法，也收藏了很多有用的博客，可是因为之前缺乏资料整理的意识，找到解决办法后就只是新建一个文本文档把博客的链接和解决了什么问题写在上面…….,或者更草率把解决办法的连接添加在浏览器的收藏夹了，很少去管。不出所料时间一长就……emmmmm。所以搭建一个属于自己的个人博客，把自己爬过的坑和决绝办法记录下来。</p>
+<h4 id="项目构建"><a href="#项目构建" class="headerlink" title="项目构建"></a><strong>项目构建</strong></h4><p>首先，Hexo是基于nodeJS编写的，所以需要安装一下nodeJs和里面的npm工具，安装hexo之前要先安装node环境。</p>
+<p><strong>安装hexo</strong></p>
+<p>当node环境安装好后，就可以安装hexo了，先新建一个blog的文件夹，然后打开cmd，cd到该文件夹下（或者在该文件夹下按住shift键，鼠标右击打开powershell窗口）</p>
+<p>输入命令</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>初始化hexo(xxx)</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">hexo init xxx</span><br></pre></td></tr></table></figure>
+<p>然后cd 到xxx下（xxx取什么名字都行）</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p>新建完成后，该目录下</p>
+<p>node_modules: 依赖包；</p>
+<p>public：存放生成的页面；</p>
+<p>scaffolds：生成文章的一些模板；</p>
+<p>source：用来存放你的文章；</p>
+<p>themes：主题；</p>
+<p> _config.yml: 博客的配置文件；</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>这样打开浏览器url输入“localhost:4000”；就能看到博客</p>
+
     </div>
 </article>
+
+
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -306,13 +341,13 @@
 
                 
                 <li>
-                    <a href="/archives/2019/05/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/posts/3261cbbf/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 
                 <li>
-                    <a href="/archives/2019/05/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/posts/3261cbbf/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
@@ -320,7 +355,7 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/hexo/" style="font-size: 19.42893438751658px;" class="tag-cloud-link">hexo</a>
+    <a href="/tags/hexo/" style="font-size: 13.003348369914335px;" class="tag-cloud-link">hexo</a>
     
 </div>
                 
