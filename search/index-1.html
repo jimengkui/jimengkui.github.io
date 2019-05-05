@@ -194,7 +194,7 @@
     // 获取每页的页码数
     var pageSize = '10'
     var useLeancloud = ''
-    var useComment = ('false' === 'true')
+    var useComment = ('true' === 'true')
     $.getJSON('/content.json', function (json) {
       $('#search-breadcrumb').append(`搜索'${s}'的结果`)
       var result = getArticles(s, 'posts', json).concat(getArticles(s, 'pages', json))
@@ -218,7 +218,7 @@
       	var [month, day] = article.date.split('-')
         ''
         ''
-        var defaultPreview = 'https://jimegnkui.oss-cn-shenzhen.aliyuncs.com/blog/imgs/preview1.jpg'
+        var defaultPreview = 'https://jimegnkui.oss-cn-shenzhen.aliyuncs.com/blog/imgs/preview3.jpg'
         var preview = article.preview ? article.preview : defaultPreview
         var path = '/' + article.path
         resultList.append(`<div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
@@ -501,9 +501,9 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/hexo/" style="font-size: 17.047832526565045px;" class="tag-cloud-link">hexo</a>
+    <a href="/tags/hexo/" style="font-size: 16.10312727047458px;" class="tag-cloud-link">hexo</a>
     
-    <a href="/tags/blog/" style="font-size: 13.923500150411822px;" class="tag-cloud-link">blog</a>
+    <a href="/tags/blog/" style="font-size: 15.377648085034657px;" class="tag-cloud-link">blog</a>
     
 </div>
                 
@@ -587,5 +587,27 @@
 <script src="/js/blog.js"></script>
 
 
+
+<script src="https://myau.moe/js/comment/gitment.browser.js"></script>
+<script>
+    if(window.commentConfig) {
+      window.commentConfig.id = 'Sat May 04 2019 15:17:42 GMT+0800'
+      window.commentConfig.owner = 'jimengkui'
+      window.commentConfig.repo = 'jimengkui.github.io'
+      window.commentConfig.client_id = '7d5ac68c0d51ff6fab15'
+      window.commentConfig.client_secret = '80c6720d51259d3824f997412e6441649d1f4836'
+      window.commentConfig.redirect_uri = ''
+    } else {
+      window.commentConfig = {
+      	id: 'Sat May 04 2019 15:17:42 GMT+0800',
+        owner: 'jimengkui',
+        repo: 'jimengkui.github.io',
+        client_id: '7d5ac68c0d51ff6fab15',
+        client_secret: '80c6720d51259d3824f997412e6441649d1f4836',
+        redirect_uri: ''
+      }
+    }
+</script>
+<script src="/js/comment/gitment.js"></script>
 
 </html>
