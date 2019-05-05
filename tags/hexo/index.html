@@ -66,18 +66,17 @@
             </button>
             <a href="http://yoursite.com">
                 
+                <!-- 这里background使用imgs/${logo_image}(路径文件名) -->
                 <style>
                     #gal-header .navbar-brand {
-                        height: 54px;
-                        line-height: 24px;
-                        font-size: 28px;
-                        opacity: 1;
-                        background-color: rgba(0,0,0,0);
-                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
+                        width: 200px;
+                        height: 50px;
+                        display: block;
+                        background: url('/imgs/logo.jpg') no-repeat;
                     }
                 </style>
-                <!-- 这里使用文字(navbar_text or config.title) -->
-                <div class="navbar-brand">冰华</div>
+                    
+                <div class="navbar-brand"></div>
                 
             </a>
         </div>
@@ -135,6 +134,10 @@
                             <a href="/tags/hexo/">hexo</a>
                         </li>
                         
+                        <li>
+                            <a href="/tags/blog/">blog</a>
+                        </li>
+                        
                         
                         
                     </ul>
@@ -185,6 +188,9 @@
     </div>
     <div class="content-article" style="margin-top: 30px;">
         <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
+            
+            <a href="/posts/133f8679/">hexo博客爬坑日志（三）</a>
+            <br>
             
             <a href="/posts/2772767/">hexo博客爬坑日记（二）</a>
             <br>
@@ -250,6 +256,12 @@
             
             <li class="list-group-item">
                 <span class="post-title">
+                    <a href="/posts/133f8679/">hexo博客爬坑日志（三）</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
                     <a href="/posts/2772767/">hexo博客爬坑日记（二）</a>
                 </span>
             </li>
@@ -284,6 +296,12 @@
             
             <li class="list-group-item">
                 <span class="post-title">
+                    <a href="/posts/133f8679/">hexo博客爬坑日志（三）</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
                     <a href="/posts/2772767/">hexo博客爬坑日记（二）</a>
                 </span>
             </li>
@@ -313,7 +331,9 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/hexo/" style="font-size: 11.888027804466443px;" class="tag-cloud-link">hexo</a>
+    <a href="/tags/hexo/" style="font-size: 8.747574091278512px;" class="tag-cloud-link">hexo</a>
+    
+    <a href="/tags/blog/" style="font-size: 13.88879564698167px;" class="tag-cloud-link">blog</a>
     
 </div>
                 

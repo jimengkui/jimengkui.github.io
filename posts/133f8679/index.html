@@ -10,7 +10,7 @@
     
     
     
-    <title>404 | 冰华</title>
+    <title>hexo博客爬坑日志（三） | 冰华</title>
     <link href="”http://yoursite.com“" rel="”prefetch”">
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -161,10 +161,82 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    <!-- 搜索页面(尽可能接近ZanBlog搜索功能) -->
+                    
+<article class="article well article-body" id="article">
+    <div class="breadcrumb">
+        <i class="fa fa-home"></i>
+        <a href="http://yoursite.com">冰华</a>
+        >
+        <span>hexo博客爬坑日志（三）</span>
+    </div>
+    <!-- 大型设备详细文章 -->
+    <div class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/posts/133f8679/">hexo博客爬坑日志（三）</a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/hexo/">hexo</a>, 
+                
+                <a href="/tags/blog/">blog</a>
+                
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2019-05-05
+            </span>
+            
+        </div>
+    </div>
+    <!-- 小型设备详细文章 -->
+    <div class="visible-xs">
+        <center>
+            <div class="title-article">
+                <h4>
+                    <a href="/posts/133f8679/">hexo博客爬坑日志（三）</a>
+                </h4>
+            </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2019-05-05
+            </p>
+            <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/hexo/">hexo</a>, 
+                
+                <a href="/tags/blog/">blog</a>
+                
+                
+                
+            </p>
+        </center>
+    </div>
+    <div class="content-article">
+        <p>将hexo生成的静态博客hexo文件部署到github page上</p>
+<a id="more"></a>
+<p><strong>前言</strong></p>
+<p>将hexo生成的静态博客hexo文件部署到github page上</p>
+<h4 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h4><p>github上新建一个名为<code>你的用户名.github.io</code>的仓库，比如说，如果你的github用户名是test，那么你就新建<code>test.github.io</code>的仓库（必须是你的用户名，其它名称无效）。</p>
+<h4 id="将hexo部署到Github上"><a href="#将hexo部署到Github上" class="headerlink" title="将hexo部署到Github上"></a>将hexo部署到Github上</h4><p>打开站点配置文件 <code>_config.yml</code>，翻到最后，修改为YourgithubName，就是你的GitHub账户</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/YourgithubName/YourgithubName.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p>然后要安装一个deploy-git的插件</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>然后</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+<p>注意deploy时可能要你输入username和password。</p>
+<p>过一会儿就可以在<code>http://yourname.github.io</code> 这个网站看到你的博客。</p>
+<p>个人的域名还在申请中，以后再做修改。</p>
+<p>参考博客链接：<a href="https://blog.csdn.net/sinat_37781304/article/details/82729029#comments" target="_blank" rel="noopener">https://blog.csdn.net/sinat_37781304/article/details/82729029#comments</a></p>
 
-<!-- 404 自定义页面 -->
-<!-- 有其他想自定义的page在这里添加判断条件, 并且写好对应的模板渲染文件 -->
+    </div>
+</article>
+
 
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
@@ -281,13 +353,13 @@
 
                 
                 <li>
-                    <a href="/404/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/posts/133f8679/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 
                 <li>
-                    <a href="/404/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/posts/133f8679/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
@@ -295,9 +367,9 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/hexo/" style="font-size: 11.596808996029871px;" class="tag-cloud-link">hexo</a>
+    <a href="/tags/hexo/" style="font-size: 9.034558216812913px;" class="tag-cloud-link">hexo</a>
     
-    <a href="/tags/blog/" style="font-size: 12.12460480904359px;" class="tag-cloud-link">blog</a>
+    <a href="/tags/blog/" style="font-size: 15.94417397368137px;" class="tag-cloud-link">blog</a>
     
 </div>
                 
