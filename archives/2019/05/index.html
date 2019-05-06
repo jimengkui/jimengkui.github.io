@@ -11,7 +11,7 @@
     
     
     <title>archive_a | 冰华</title>
-    <link href="”http://yoursite.com“" rel="”prefetch”">
+    <link href="”https://jimengkui.cn“" rel="”prefetch”">
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 <link rel="stylesheet" href="/css/aos.css">
@@ -30,6 +30,14 @@
             }
         }
     </style>
+    
+    <script src="//cdn1.lncld.net/static/js/3.4.2/av-min.js"></script>
+    <script>
+      AV.init({
+        appId: 'gmu5vq2iumyGvb6TnbVkPwH8-gzGzoHsz',
+        appKey: 'dtNOQcqhpGX4hB0doB8ynqyj'
+      })
+    </script>
     
     <!--<script type="text/javascript">
       if (document.images) {
@@ -64,7 +72,7 @@
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-navbar-collapse" aria-expanded="false">
                 <span class="fa fa-lg fa-reorder"></span>
             </button>
-            <a href="http://yoursite.com">
+            <a href="https://jimengkui.cn">
                 
                 <style>
                     #gal-header .navbar-brand {
@@ -165,7 +173,7 @@
                     <article class="article well article-body" id="article-archive">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
-        <a href="http://yoursite.com">冰华</a>
+        <a href="https://jimengkui.cn">冰华</a>
         >
         <span>归档</span>
     </div>
@@ -252,6 +260,18 @@
     
     <!-- 要配置好leancloud才能开启此小工具 -->
     
+    <aside id="sidebar-hot_posts">
+    <div class="panel panel-gal hot hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-fire"></i>
+            最热文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush"></ul>
+    </div>
+</aside>
+    
     
     <aside id="sidebar-recent_posts">
     <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
@@ -299,13 +319,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/posts/133f8679/">hexo博客爬坑日志（三）</a>
+                    <a href="/posts/3261cbbf/">hexo博客爬坑日记（一）</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/posts/3261cbbf/">hexo博客爬坑日记（一）</a>
+                    <a href="/posts/133f8679/">hexo博客爬坑日志（三）</a>
                 </span>
             </li>
             
@@ -340,9 +360,9 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/hexo/" style="font-size: 16.97965248263629px;" class="tag-cloud-link">hexo</a>
+    <a href="/tags/hexo/" style="font-size: 15.465115166095728px;" class="tag-cloud-link">hexo</a>
     
-    <a href="/tags/blog/" style="font-size: 13.871615699093503px;" class="tag-cloud-link">blog</a>
+    <a href="/tags/blog/" style="font-size: 19.0107487552545px;" class="tag-cloud-link">blog</a>
     
 </div>
                 
@@ -425,6 +445,12 @@
 <script src="/js/hs.js"></script>
 <script src="/js/blog.js"></script>
 
+
+<script>
+    window.hot_posts_count = '10'
+    // window.use_leancloud = 'true'
+</script>
+<script src="/js/comment/leancloud.js"></script>
 
 
 <script src="https://myau.moe/js/comment/gitment.browser.js"></script>

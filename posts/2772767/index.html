@@ -11,7 +11,7 @@
     
     
     <title>hexo博客爬坑日记（二） | 冰华</title>
-    <link href="”http://yoursite.com“" rel="”prefetch”">
+    <link href="”https://jimengkui.cn“" rel="”prefetch”">
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 <link rel="stylesheet" href="/css/aos.css">
@@ -30,6 +30,14 @@
             }
         }
     </style>
+    
+    <script src="//cdn1.lncld.net/static/js/3.4.2/av-min.js"></script>
+    <script>
+      AV.init({
+        appId: 'gmu5vq2iumyGvb6TnbVkPwH8-gzGzoHsz',
+        appKey: 'dtNOQcqhpGX4hB0doB8ynqyj'
+      })
+    </script>
     
     <!--<script type="text/javascript">
       if (document.images) {
@@ -64,7 +72,7 @@
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-navbar-collapse" aria-expanded="false">
                 <span class="fa fa-lg fa-reorder"></span>
             </button>
-            <a href="http://yoursite.com">
+            <a href="https://jimengkui.cn">
                 
                 <style>
                     #gal-header .navbar-brand {
@@ -166,7 +174,7 @@
 <article class="article well article-body" id="article">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
-        <a href="http://yoursite.com">冰华</a>
+        <a href="https://jimengkui.cn">冰华</a>
         >
         <span>hexo博客爬坑日记（二）</span>
     </div>
@@ -192,6 +200,10 @@
                 <i class="fa fa-calendar"></i> 2019-05-05
             </span>
             
+            <span class="label label-gal">
+                <i class="fa fa-eye"></i>
+            </span>
+            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -215,13 +227,15 @@
                 
                 
                 
+                <i class="fa fa-eye"></i>
+                
             </p>
         </center>
     </div>
     <div class="content-article">
         <p>在学习和使用hexo的过程中，觉得要注意的点（喜闻乐见的爬坑….）<br><a id="more"></a><br><strong>前言</strong></p>
 <p>在学习和使用hexo的过程中，觉得要注意的点（喜闻乐见的爬坑….）</p>
-<h5 id="主题的配置"><a href="#主题的配置" class="headerlink" title="主题的配置"></a>主题的配置</h5><h6 id="第一大坑！！！代码对齐问题"><a href="#第一大坑！！！代码对齐问题" class="headerlink" title="第一大坑！！！代码对齐问题"></a>第一大坑！！！代码对齐问题</h6><p><img src="/posts/2772767/1.PNG" alt></p>
+<h5 id="主题的配置"><a href="#主题的配置" class="headerlink" title="主题的配置"></a>主题的配置</h5><h6 id="第一大坑！！！代码对齐问题"><a href="#第一大坑！！！代码对齐问题" class="headerlink" title="第一大坑！！！代码对齐问题"></a>第一大坑！！！代码对齐问题</h6><p><img src="https://jimegnkui.oss-cn-shenzhen.aliyuncs.com/blog/imgs/page_img/hexo博客爬坑日记%EF%BC%88二%EF%BC%89/1.PNG" alt></p>
 <p>代码块不是向左靠齐，解决办法</p>
 <p>在根目录的_config.yml配置文件中将line_number:true改成false;目的将代码块前的行号去掉，（其他主题没这问题，估计是这主题和hexo渲染的迷之bug）</p>
 <h6 id="主题其他配置"><a href="#主题其他配置" class="headerlink" title="主题其他配置"></a>主题其他配置</h6><p>categories分类，about关于我，tags标签</p>
@@ -238,7 +252,7 @@
 <p>hexo g生成页面后，进入public文件中查看相关字段，可以发现，html标签内的语句是&lt; img src=”…xxxx/图片名.jpg”&gt;，而不是&lt; img src=”xxxx/图片名.jpg&gt;。</p>
 <p>参考博客：<a href="https://blog.csdn.net/u013162035/article/details/81000559" target="_blank" rel="noopener">https://blog.csdn.net/u013162035/article/details/81000559</a></p>
 <h5 id="中文文章路径问题"><a href="#中文文章路径问题" class="headerlink" title="中文文章路径问题"></a>中文文章路径问题</h5><p>中文命名的文章 打不开 ，url 路径被编码了, 匹配不到文章</p>
-<p><img src="/posts/2772767/2.PNG" alt></p>
+<p><img src="https://jimegnkui.oss-cn-shenzhen.aliyuncs.com/blog/imgs/page_img/hexo博客爬坑日记%EF%BC%88二%EF%BC%89/2.PNG" alt></p>
 <p>解决办法</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
 <p>在hexo站点根目录<code>_config.yml</code>修改<code>permalink: :year/:month/:day/:title/</code>配置为:</p>
@@ -246,7 +260,7 @@
 <p>在hexo站点根目录<code>_config.yml</code>添加配置:</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">abbrlink:</span><br><span class="line">  alg: crc32  #support crc16(default) and crc32</span><br><span class="line">  rep: hex    #support dec(default) and hex</span><br></pre></td></tr></table></figure>
 <p>完成后文章路径变成：</p>
-<p><img src="/posts/2772767/3.PNG" alt></p>
+<p><img src="https://jimegnkui.oss-cn-shenzhen.aliyuncs.com/blog/imgs/page_img/hexo博客爬坑日记%EF%BC%88二%EF%BC%89/3.PNG" alt></p>
 <h6 id="提醒："><a href="#提醒：" class="headerlink" title="提醒："></a>提醒：</h6><p>由于该插件已经将中文路径该了所以引用图片是直接写图片名称就行</p>
 <p>例如”hexo博客爬坑日记（二）/1.png”,直接写成1.png就行。</p>
 <h5 id="建议"><a href="#建议" class="headerlink" title="建议"></a>建议</h5><p>在每次更改后先和hexo clean清理掉原来生成的静态文件，然后再hexo g 生成</p>
@@ -305,6 +319,18 @@
     
     <!-- 要配置好leancloud才能开启此小工具 -->
     
+    <aside id="sidebar-hot_posts">
+    <div class="panel panel-gal hot hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-fire"></i>
+            最热文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush"></ul>
+    </div>
+</aside>
+    
     
     <aside id="sidebar-recent_posts">
     <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
@@ -352,13 +378,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/posts/133f8679/">hexo博客爬坑日志（三）</a>
+                    <a href="/posts/3261cbbf/">hexo博客爬坑日记（一）</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/posts/3261cbbf/">hexo博客爬坑日记（一）</a>
+                    <a href="/posts/133f8679/">hexo博客爬坑日志（三）</a>
                 </span>
             </li>
             
@@ -393,9 +419,9 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/hexo/" style="font-size: 11.467128748601905px;" class="tag-cloud-link">hexo</a>
+    <a href="/tags/hexo/" style="font-size: 8.509746369574128px;" class="tag-cloud-link">hexo</a>
     
-    <a href="/tags/blog/" style="font-size: 8.20273756704511px;" class="tag-cloud-link">blog</a>
+    <a href="/tags/blog/" style="font-size: 13.083346975849924px;" class="tag-cloud-link">blog</a>
     
 </div>
                 
@@ -478,6 +504,12 @@
 <script src="/js/hs.js"></script>
 <script src="/js/blog.js"></script>
 
+
+<script>
+    window.hot_posts_count = '10'
+    // window.use_leancloud = 'true'
+</script>
+<script src="/js/comment/leancloud.js"></script>
 
 
 <script src="https://myau.moe/js/comment/gitment.browser.js"></script>
